@@ -1,5 +1,5 @@
 function getproduct() {
-    return fetch('./product.json')
+    return fetch('.\product.json')
         .then(res => res.json())
         .then(res => {
         console.log(res);
