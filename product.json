@@ -1,0 +1,38 @@
+[
+    {
+        "productid":1,
+        "productname":"ruled note",
+        "productquantity":1000,
+        "productprice":40
+    },
+    {
+        "productid":2,
+        "productname":"unruled note",
+        "productquantity":1000,
+        "productprice":45
+    },
+    {
+        "productid":3,
+        "productname":"graph note",
+        "productquantity":500,
+        "productprice":30
+    }
+    {
+        "productid":4,
+        "productname":"record note",
+        "productquantity":1000,
+        "productprice":60
+    },
+    {
+        "productid":2,
+        "productname":"drawing note",
+        "productquantity":1000,
+        "productprice":50
+    },
+    {
+        "productid":3,
+        "productname":"dairy note",
+        "productquantity":1000,
+        "productprice":30
+    }
+]
