@@ -1,26 +1,27 @@
-class ElectricityBill {
+class electricitybill {
     constructor(rate, units) {
         this.rate = rate;
         this.units = units;
     }
 }
-class Domestic extends ElectricityBill {
+class domestic extends electricitybill {
     constructor(rate, units) {
         super(rate, units);
     }
-    billDetails() {
+    billdetails() {
         console.log("  bill amount is " + (this.rate * this.units));
     }
 }
-let d = new Domestic(5, 5);
-d.billDetails();
-class Commercial extends ElectricityBill {
+let d = new domestic(5, 1);
+d.billdetails();
+
+class commercial extends electricitybill {
     constructor(rate, units) {
         super(rate, units);
     }
-    billDetails() {
+    billdetails() {
         console.log("bill amount is " + (this.rate * this.units));
     }
 }
-let d1 = new Commercial(10, 10);
-d1.billDetails();
+let c = new commercial(10, 1);
+c.billdetails();

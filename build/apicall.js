@@ -1,13 +1,19 @@
 "use strict";
-function getproduct() {
-    return fetch('.\product.json')
+function getproperties() {
+    return fetch('/product.json')
         .then(res => res.json())
         .then(res => {
         console.log(res);
         return res;
     });
 }
-getproduct();
-fetch('https://fakestoreapi.com/products?sort=desc')
-    .then(res => res.json())
-    .then(json => console.log(json));
+getproperties()
+    .then(properties => {
+    console.log(properties.map(p => p.productid + ' ' + p.productname + ' ' + p.price + ' ' + p.quantity + '\n').toString());
+});
+function getFAPI() {
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+        .then(responce => responce.json())
+        .then(json => console.log(json));
+}
+getFAPI();

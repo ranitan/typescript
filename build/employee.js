@@ -1,13 +1,13 @@
 "use strict";
-class Employeedetails {
-    constructor(id, name, designation, salary, project) {
-        this.id = id;
-        this.name = name;
-        this.designation = designation;
-        this.salary = salary;
-        this.project = project;
+class Empdetails {
+    constructor(empid, empname, empdesig, empsal, emppro) {
+        this.id = empid;
+        this.name = empname;
+        this.designation = empdesig;
+        this.salary = empsal;
+        this.project = emppro;
     }
-    disp() {
+    display() {
         console.log(` employee id is         : ${this.id}`);
         console.log(` employee name is        : ${this.name}`);
         console.log(` employee Designation is : ${this.designation}`);
@@ -15,5 +15,5 @@ class Employeedetails {
         console.log(`employee Project is      : ${this.project}`);
     }
 }
-var a = new Employeedetails("136", "ranita", "trainee", 6000, "typescript");
-a.disp();
+var empd = new Empdetails("20bsit113", "Harita", "traineee", 9000, "front end ");
+empd.display();

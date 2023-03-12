@@ -1,4 +1,3 @@
-"use strict";
 class course {
     constructor(c_id, c_name) {
         this.courseid = c_id;
